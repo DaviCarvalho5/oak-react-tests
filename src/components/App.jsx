@@ -8,6 +8,7 @@ import UsersRender from './tests/UsersRender';
 import RandomNumberGen from './tests/RandomNumberGen';
 import StateTest from './tests/StateTest';
 import ControlledComponent from './tests/ControlledComponent';
+import CheckList from './tests/CheckList';
 
 export default function App(props) {
   return (
@@ -30,6 +31,14 @@ export default function App(props) {
       </header>
 
       <section>
+        <TestContainer
+          title="Master Check-listnator 3000"
+          createdAt="05/09/2021"
+          comments="Yeah! A incredible classical check-list."
+        >
+          <CheckList />
+        </TestContainer>
+
         <TestContainer
           title="Controlled Component"
           createdAt="04/09/2021"

@@ -55,10 +55,10 @@ export default function App(props) {
           createdAt="04/09/2021"
           comments="Trying with some data."
         >
-          <h3>Table</h3>
+          <h3 className="left">Table</h3>
           <UsersRender />
 
-          <h3>List</h3>
+          <h3 className="left">List</h3>
           <UsersRender type="list" />
         </TestContainer>
 

@@ -1,6 +1,6 @@
 # Oak React Tests
 
-![Oak React Tests Screenshot](https://i.imgur.com/hYGyQP4.png)
+![Oak React Tests Screenshot](https://i.imgur.com/74eRO6E.png)
 
 ## What is it?
 

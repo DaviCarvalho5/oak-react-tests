@@ -42,14 +42,18 @@ export default function StateTest(props) {
       <p>No stated two: {noStatedTwo}</p>
       <p>Stated two: {statedTwo}</p>
       <br />
+
       <p>[Open your dev console]</p>
       <br />
+
       <button type="button" onClick={handleClickNoStated}>
         No stated
       </button>
+
       <button type="button" onClick={handleClickStatedOne}>
         Stated one
       </button>
+
       <button type="button" onClick={handleClickStatedTwo}>
         Stated two
       </button>

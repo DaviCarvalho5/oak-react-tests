@@ -45,7 +45,7 @@ export default function ListRender(props) {
   }
 
   if (returnType === 'list') {
-    returnData = <ul>{getUsersList()}</ul>;
+    returnData = <ul className="left">{getUsersList()}</ul>;
   }
 
   return returnData;

@@ -4,6 +4,8 @@ body,
 div,
 header,
 section,
+input,
+button,
 h1,
 h2,
 h3,
@@ -43,6 +45,60 @@ a {
 
 a:hover {
   color: var(--oak-normal-green);
+}
+
+input {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--oak-dark-green);
+
+  display: block;
+  padding: 0.5em 0.8em;
+  margin: 0 auto 0.4em auto;
+  min-width: 210px;
+
+  border: solid 2px var(--oak-normal-green);
+  border-radius: 4px;
+  background-color: var(--oak-white);
+}
+
+input:focus {
+  outline: none;
+  font-weight: 600;
+}
+
+button {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--oak-white);
+
+  display: block;
+  padding: 0.5em 1.2em;
+  margin: 0 auto 0.4em auto;
+  min-width: 210px;
+
+  border: solid 2px var(--oak-normal-green);
+  border-radius: 4px;
+  background-color: var(--oak-normal-green);
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: var(--oak-dark-green);
+  border-color: var(--oak-dark-green);
+}
+
+button:active {
+  background-color: var(--oak-normal-green);
+  border-color: var(--oak-normal-green);
+}
+
+.left {
+  text-align: left;
 }
 
 #main-header {

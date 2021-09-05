@@ -18,13 +18,14 @@ export default function RandomNumberGen(props) {
   return (
     <React.Fragment>
       <h3>Random Number Generator</h3>
+      <br />
       <p>{randomNum}</p>
-
+      <br />
       <form>
-        <input type="text" placeholder="Min." name="min" id="min-input" />
-        <input type="text" placeholder="Max." name="max" id="max-input" />
+        <input type="number" placeholder="Min." name="min" id="min-input" />
+        <input type="number" placeholder="Max." name="max" id="max-input" />
         <input
-          type="text"
+          type="number"
           placeholder="Decimals."
           name="decimals"
           id="decimals-input"

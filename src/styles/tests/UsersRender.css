@@ -1,0 +1,21 @@
+h4 {
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+td,
+th {
+  border: solid 2px black;
+  padding: 1em;
+}
+
+ul {
+  text-align: left;
+  padding-left: 1em;
+  margin: 0 0 1em 0;
+}

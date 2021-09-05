@@ -1,0 +1,32 @@
+.TestContainer {
+  border: solid 2px var(--oak-light-green);
+  border-radius: 4px;
+  margin-bottom: 2.5em;
+}
+
+.TestContainer > header {
+  background-color: var(--oak-light-green);
+
+  padding: 0.5em 1em;
+}
+
+.TestContainer > header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TestContainer > header > div > h2 {
+  font-family: 'STIX Two Text', serif;
+  font-weight: 700;
+}
+
+.TestContainer > header > p {
+  text-align: left;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.TestContainer > section {
+  padding: 1em;
+}

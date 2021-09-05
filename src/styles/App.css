@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=STIX+Two+Text:ital,wght@0,500;0,700;1,500&display=swap');
+
+body,
+div,
+header,
+section,
+h1,
+h2,
+h3,
+a,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --oak-white: #f1f8e9;
+  --oak-light-green: #c5e1a5;
+  --oak-normal-green: #558b2f;
+  --oak-dark-green: #1a350f;
+
+  text-align: center;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+
+  background-color: var(--oak-white);
+  color: var(--oak-dark-green);
+
+  padding: 2.5em;
+}
+
+h1 {
+  font-weight: 500;
+  font-family: 'STIX Two Text', serif;
+  font-size: 2em;
+}
+
+a {
+  color: var(--oak-dark-green);
+}
+
+a:hover {
+  color: var(--oak-normal-green);
+}
+
+#main-header {
+  margin-bottom: 2.5em;
+}
+
+#main-header > p {
+  font-size: 0.8em;
+}
+
+#oak-logo {
+  margin-bottom: 8px;
+}

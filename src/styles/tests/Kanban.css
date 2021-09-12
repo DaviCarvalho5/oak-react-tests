@@ -1,0 +1,156 @@
+.Column {
+  height: 500px;
+  padding: 15px;
+  margin-right: 15px;
+  min-width: 280px;
+
+  background-color: var(--oak-light-green);
+  border: solid 2px var(--oak-light-green);
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  overflow-y: scroll;
+  transition: 0.15s;
+}
+
+.Column > header {
+  display: flex;
+  width: 100%;
+}
+
+.Column > header input {
+  min-width: 1px;
+}
+
+.Column > header button {
+  min-width: 42px;
+  height: 42px;
+
+  margin-left: 0.4em;
+}
+
+.Column > header button img {
+  min-width: 12px;
+  height: 12px;
+}
+
+.Column.Highlight {
+  border-color: var(--oak-dark-green);
+}
+
+.Column > h3 {
+  margin-bottom: 15px;
+}
+
+.Card {
+  margin-bottom: 0.4em;
+  padding: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: var(--oak-normal-green);
+  border-radius: 4px;
+
+  cursor: grab;
+}
+
+.Card input {
+  font-size: 1.1em;
+
+  width: 100%;
+  text-align: center;
+
+  color: var(--oak-white);
+  background-color: var(--oak-normal-green);
+
+  transition: 0.2s;
+}
+
+.Card input:focus {
+  color: var(--oak-dark-green);
+  background-color: var(--oak-light-green);
+  border-color: var(--oak-light-green);
+}
+
+.Card textarea {
+  font-size: 0.8em;
+  transition: 0.2s;
+  color: var(--oak-white);
+  background-color: var(--oak-normal-green);
+  border-color: var(--oak-light-green);
+}
+
+.Card textarea:focus {
+  color: var(--oak-dark-green);
+  background-color: var(--oak-light-green);
+}
+
+.Card textarea:focus::-webkit-scrollbar-track {
+  background: var(--oak-light-green);
+}
+
+.Card textarea::-webkit-scrollbar-track {
+  background: var(--oak-normal-green);
+}
+
+.Card .BtnDelete {
+  border-color: var(--oak-light-green);
+}
+.Card .BtnDelete:hover {
+  border-color: var(--oak-dark-green);
+}
+
+.Card.IsDragging {
+  cursor: grabbing;
+}
+
+.Column.IsOver {
+  border-color: var(--oak-light-green);
+}
+
+.Column .BtnDelete {
+  background-color: var(--oak-light-green);
+  width: 100%;
+}
+
+.Column .BtnDelete img {
+  width: auto;
+  height: auto;
+}
+
+.Column::-webkit-scrollbar {
+  width: 4px;
+}
+
+.Column::-webkit-scrollbar-track {
+  background: var(--oak-light-green);
+}
+
+.Column::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: var(--oak-normal-green);
+}
+
+.DropZone {
+  width: 100%;
+  min-height: 100px;
+  height: 100%;
+}
+
+#kanban {
+  justify-items: flex-start;
+  flex-basis: 280px;
+  overflow-x: scroll;
+}
+
+#btn-add-column {
+  margin: 0;
+  min-width: 280px;
+  height: 42px;
+}

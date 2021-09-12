@@ -9,6 +9,7 @@ import RandomNumberGen from './tests/RandomNumberGen';
 import StateTest from './tests/StateTest';
 import ControlledComponent from './tests/ControlledComponent';
 import CheckList from './tests/CheckList';
+import Kanban from './tests/DragAndDrop/Kanban';
 
 export default function App(props) {
   return (
@@ -31,6 +32,14 @@ export default function App(props) {
       </header>
 
       <section>
+        <TestContainer
+          title="Kambam (to do)"
+          createdAt="12/09/2021"
+          comments="I always wanted to do it!"
+        >
+          <Kanban />
+        </TestContainer>
+
         <TestContainer
           title="Master Check-listnator 3000"
           createdAt="05/09/2021"

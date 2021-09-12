@@ -23,6 +23,10 @@ export default function CheckList(pops) {
   }, [nextId]);
 
   function getTasksByCompletedState(completeState) {
+    if (!tasks) {
+      return console.log('Tasks load error');
+    }
+
     return tasks.map((task) => {
       if (task.isCompleted === completeState) {
         return (

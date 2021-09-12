@@ -6,6 +6,8 @@ header,
 section,
 input,
 button,
+textarea,
+img,
 h1,
 h2,
 h3,
@@ -33,6 +35,22 @@ body {
   padding: 2.5em;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--oak-light-green);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--oak-normal-green);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--oak-dark-green);
+}
+
 h1 {
   font-weight: 500;
   font-family: 'STIX Two Text', serif;
@@ -47,7 +65,8 @@ a:hover {
   color: var(--oak-normal-green);
 }
 
-input {
+input,
+textarea {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: 1em;
   font-weight: 400;
@@ -63,9 +82,29 @@ input {
   background-color: var(--oak-white);
 }
 
-input:focus {
+input:focus,
+textarea:focus {
   outline: none;
   font-weight: 600;
+}
+
+textarea {
+  resize: none;
+  min-width: 100%;
+  min-height: 72px;
+}
+
+textarea::-webkit-scrollbar {
+  width: 4px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: var(--oak-light-green);
+}
+
+textarea::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: var(--oak-dark-green);
 }
 
 button {
@@ -99,6 +138,11 @@ button:active {
 
 .left {
   text-align: left;
+}
+
+.FlexRow {
+  display: flex;
+  flex-direction: row;
 }
 
 #main-header {
